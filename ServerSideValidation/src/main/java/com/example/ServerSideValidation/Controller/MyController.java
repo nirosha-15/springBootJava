@@ -27,6 +27,10 @@ public class MyController {
 	public String getHello() {
 		return "welcome dear";
 	}
+	@GetMapping("/komala")
+	public String getKHello() {
+		return "welcome dear";
+	}
 	//handler for process form
 	@PostMapping("/process")
 	public String processForm(@Valid @ModelAttribute("loginData") LoginData loginData, BindingResult result)
